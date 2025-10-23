@@ -120,5 +120,24 @@ int main(){
     printf("PIB per Capita: Cidade 1 Venceu %d\n", (pibPerCapita > pibPerCapita2));
     printf("Superpoder: super poder da cidade %d\n", (superPoder1 > superPoder2));
 
+    // Logica determinando qual carta vence comparando alguns atributos
+
+    if(densidadePop < densidadePop2) {
+        printf("Carta 1 Venceu!\n");
+    } else {
+        printf("Carta 2 Venceu!\n");
+    };
+
+    if(area > area2) {
+        printf("Carta 1 %d\n", area);
+        printf("Carta 2 %d\n", area);
+        printf("Carta 1 venceu!\n");
+    } else {
+        printf("Carta 1 %d\n", area);
+        printf("Carta 2 %d\n", area);
+        printf("Carta 2 venceu!\n");
+    }
+    
     return 0;
+    
 }
